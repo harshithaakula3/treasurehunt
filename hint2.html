@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      body
+      {
+        background-image:url('hint2jpg.jpg');
+        background-repeat:no-repeat;
+         background-size: 1550px 800px;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <!--<img style="position:relative" src="hint2jpg.jpg" alt="">-->
+    <div style="margin-left:600px;margin-top:600px" >
+    <h2></h2>
+      <input  type="text" name="" value="">
+      <a href=""><button onclick="validate()"type="button" name="button">Check now</button></a>
+
+    </div>
+
+<script type="text/javascript">
+  function validate()
+  {
+    var x=document.querySelector("input").value;
+    if(x==="0")
+    {
+      var y=document.querySelector("h2");
+      document.querySelector("a").href="hint3.html";
+      y.innerHTML="You are correct now click the button";
+    }
+    else{
+      var y=document.querySelector("h2");
+
+      y.innerHTML="oops try again";
+    }
+  }
+</script>
+  </body>
+</html>

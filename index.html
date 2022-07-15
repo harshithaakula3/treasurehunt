@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      body
+      {
+        background-image:url('indeximg.jpg');
+        background-repeat:no-repeat;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body >
+    <div style="margin-left:1000px;margin-top:280px">
+      <h1>This journey is encrypted</h1>
+
+
+      <input type="text" name="" value="">
+      <a href=""><button onclick="validate()" type="button" name="button">Check now</button></a>
+      <h2>Enter the key</h2>
+
+    </div>
+    <script type="text/javascript">
+      function validate()
+      {
+        var x=document.querySelector("input").value;
+        if(x==='4')
+        {
+          var y=document.querySelector("h2");
+          document.querySelector("a").href="party.html";
+          y.innerHTML="You are correct now click the button";
+
+        }
+        else{
+          var y=document.querySelector("h2");
+
+          y.innerHTML="oops you are wrong";
+        }
+
+      }
+    </script>
+  </body>
+</html>
